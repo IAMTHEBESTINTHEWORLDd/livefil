@@ -1,3 +1,10 @@
+Nose_x=0;
+Nose_y=0;
+
+function preload(){
+    clown_NOSY=loadImage("https://i.postimg.cc/3x3QzSGq/m.png")
+}
+
 function setup()
 {
     canvas=createCanvas(455,355);
@@ -25,7 +32,8 @@ if(results.length>0){
 
 
 function draw(){
-    image(chimera, 0, 0, 500, 400);
+    image(chimera, 0, 0, 455, 355);
+    image(clown_NOSY,Nose_x-155,Nose_y-80,70,50);
 }
 
 
